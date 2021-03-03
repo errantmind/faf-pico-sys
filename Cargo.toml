@@ -1,0 +1,13 @@
+[package]
+name = "faf-pico-sys"
+version = "0.1.0"
+authors = ["James Bates <jmbates@gmail.com>"]
+edition = "2018"
+
+[build-dependencies]
+cc = "*"
+
+[profile.bench]
+opt-level = 3
+codegen-units = 1
+lto = true
