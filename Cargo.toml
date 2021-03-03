@@ -6,8 +6,3 @@ edition = "2018"
 
 [build-dependencies]
 cc = "*"
-
-[profile.bench]
-opt-level = 3
-codegen-units = 1
-lto = true
