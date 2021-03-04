@@ -1,4 +1,4 @@
-#faf-pico-sys
+# faf-pico-sys
 
 Bindings to the C library `picohttpparser`. This is an internal crate used by `faf`
 
