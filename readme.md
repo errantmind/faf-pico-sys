@@ -1,6 +1,6 @@
 # faf-pico-sys
 
-Bindings to the C library `picohttpparser`. This is an internal crate used by `faf`
+Bindings to the C library `picohttpparser` optimized for maximum performance. This is an internal crate used by `faf`
 
 ## Notes
 * Must install and compile with clang, gcc will fail
