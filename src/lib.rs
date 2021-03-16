@@ -2,18 +2,18 @@
 
 #[repr(C)]
 pub struct phr_header {
-    name: *const i8,
-    name_len: usize,
-    value: *const i8,
-    value_len: usize,
+    pub name: *const i8,
+    pub name_len: usize,
+    pub value: *const i8,
+    pub value_len: usize,
 }
 
 #[repr(C)]
 pub struct phr_chunked_decoder {
-    bytes_left_in_chunk: usize,
-    consume_trailer: i8,
-    hex_count: i8,
-    state: i8,
+    pub bytes_left_in_chunk: usize,
+    pub consume_trailer: i8,
+    pub hex_count: i8,
+    pub state: i8,
 }
 
 #[link(name = "picohttpparser", kind = "static")]
