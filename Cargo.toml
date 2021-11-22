@@ -1,8 +1,8 @@
 [package]
 name = "faf-pico-sys"
-version = "0.1.1"
-authors = ["James Bates <jmbates@gmail.com>"]
-edition = "2018"
+version = "0.1.2"
+authors = ["James Bates <errantmind@protonmail.com>"]
+edition = "2021"
 
 [build-dependencies]
-cc = "*"
+cc = { version = "*", default-features = false }
