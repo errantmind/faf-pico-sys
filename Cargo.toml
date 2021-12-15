@@ -1,6 +1,6 @@
 [package]
 name = "faf-pico-sys"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["James Bates <errantmind@protonmail.com>"]
 edition = "2021"
 
