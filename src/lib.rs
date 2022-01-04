@@ -1,6 +1,4 @@
 #![allow(dead_code)]
-// #![no_std]
-// #![no_main]
 
 #[repr(C)]
 pub struct phr_header {
@@ -58,32 +56,4 @@ extern "C" {
         buf: *mut i8,
         buf_len: *mut usize,
     ) -> isize;
-
-    pub fn phr_parse_request_path_pipeline(
-        buf_start: *const i8,
-        len: usize,
-        method: *mut *const i8,
-        method_len: *mut usize,
-        path: *mut *const i8,
-        path_len: *mut usize,
-    ) -> i32;
-
-    pub fn phr_parse_request_path_fast_pipeline(
-        buf_start: *const i8,
-        len: usize,
-        method: *mut *const i8,
-        method_len: *mut usize,
-        path: *mut *const i8,
-        path_len: *mut usize,
-    ) -> i32;
-
-    pub fn test_simd() -> i32;
 }
-
-// #[lang = "eh_personality"]
-// fn eh_personality() {}
-
-// #[panic_handler]
-// fn panic(_info: &core::panic::PanicInfo) -> ! {
-//     loop {}
-// }
